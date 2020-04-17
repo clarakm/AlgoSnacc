@@ -20,7 +20,11 @@ export default function App() {
         <Stack.Screen name="Challenge" component={ChallengeScreen} />
         <Stack.Screen name="Explanation" component={ExplanationScreen} />
         <Stack.Screen name="Sign Up" component={SignUp} />
-        <Stack.Screen name="Home" component={BottomTabNav} />
+        <Stack.Screen
+          name="Home"
+          component={BottomTabNav}
+          options={{ headerShown: false }}
+        />
         <Stack.Screen name="Snacks" component={SnackScreen} />
       </Stack.Navigator>
     </NavigationContainer>

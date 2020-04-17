@@ -17,11 +17,12 @@ const Home = ({ navigation }) => {
             backgroundColor: '#17b9eb',
             height: 200,
             borderRadius: 10,
+            marginTop: 80,
           }}
           titleStyle={{ color: 'white', alignSelf: 'flex-start' }}
           dividerStyle={{ height: 2, backgroundColor: 'white' }}
         >
-          <Text style={styles.challenge}>Two Sum</Text>
+          <Text style={styles.challenge}>Factorial</Text>
         </Card>
       </TouchableOpacity>
       <TouchableOpacity

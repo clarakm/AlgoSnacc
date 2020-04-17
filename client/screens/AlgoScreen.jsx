@@ -22,9 +22,10 @@ const styles = StyleSheet.create({
   },
   algoHeader: {
     backgroundColor: '#17b9eb',
-    height: 80,
+    height: 100,
     justifyContent: 'center',
     flexDirection: 'row',
+    paddingTop: 40,
   },
   algoTitle: {
     color: 'white',

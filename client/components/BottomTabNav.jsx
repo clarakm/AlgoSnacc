@@ -16,6 +16,7 @@ const BottomTabNav = () => {
       screenOptions={({ route }) => ({
         tabBarIcon: ({ focused, color, size }) => {
           let iconName;
+          let tabBarVisible;
           if (route.name === 'Home') {
             iconName = focused ? 'ios-home' : 'md-home';
           } else if (route.name === 'Algorithms') {
@@ -40,9 +41,13 @@ const BottomTabNav = () => {
     >
       <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen name="Algorithms" component={AlgoScreen} />
-      <Tab.Screen name="About" component={AboutScreen} />
+      {/* <Tab.Screen name="About" component={AboutScreen} /> */}
       {/* signout functionality needs to be worked on */}
-      <Tab.Screen name="Sign Out" component={LoginScreen} />
+      <Tab.Screen
+        name="Sign Out"
+        component={LoginScreen}
+        options={{ tabBarVisible: false }}
+      />
     </Tab.Navigator>
   );
 };
